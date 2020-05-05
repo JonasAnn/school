@@ -149,6 +149,31 @@ body {
     transform: translateY(1px);
     text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.404); }
 
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 4rem;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  text-align: center; }
+  .footer__logo-box {
+    width: 5%;
+    background-color: burlywood; }
+  .footer__logo {
+    width: 100%;
+    object-fit: cover; }
+  .footer__about-company {
+    width: 30%; }
+  .footer__about-links {
+    width: 30%; }
+  .footer__paragraph:not(:last-child) {
+    padding: 2rem;
+    font-weight: 500; }
+  .footer__heading {
+    font-weight: 700;
+    text-decoration: underline; }
+
 .header {
   height: 100vh; }
   .header__body {

@@ -1,0 +1,35 @@
+.footer{
+    width: $max-width;
+    display: flex;
+    justify-content: space-evenly;
+  
+    padding: 4rem;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    text-align: center;
+
+    &__logo-box{
+        width: 5%;
+        background-color: burlywood;
+    }
+    &__logo{
+   @include imageRes;
+    }
+   &__about-company{
+       width: 30%;
+
+   }
+   &__about-links{
+       width: 30%;
+   }
+   &__paragraph:not(:last-child){
+       padding: 2rem;
+       font-weight: 500;
+
+   }
+   &__heading{
+       font-weight: 700;
+       text-decoration: underline;
+   }
+
+}
