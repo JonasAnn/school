@@ -2,25 +2,27 @@
     width: $max-width;
     display: flex;
     justify-content: space-evenly;
-  
+    box-shadow: 10px -10px 20px -20px $color-blue;
     padding: 4rem;
     font-size: 1.7rem;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
 
     &__logo-box{
-        width: 5%;
-        background-color: burlywood;
+        width: 20%;
+      
     }
     &__logo{
-   @include imageRes;
+        width: 50%;
+        object-fit: contain;
     }
    &__about-company{
-       width: 30%;
-
+       width: 20%;
+   
    }
    &__about-links{
-       width: 30%;
+       width: 20%;
+      
    }
    &__paragraph:not(:last-child){
        padding: 2rem;
@@ -30,6 +32,9 @@
    &__heading{
        font-weight: 700;
        text-decoration: underline;
+   }
+   &__social-links{
+       width: 20%;
    }
 
 }

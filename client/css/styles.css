@@ -153,26 +153,28 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  box-shadow: 10px -10px 20px -20px #08288D;
   padding: 4rem;
   font-size: 1.7rem;
   text-transform: uppercase;
-  text-align: center; }
+  text-align: left; }
   .footer__logo-box {
-    width: 5%;
-    background-color: burlywood; }
+    width: 20%; }
   .footer__logo {
-    width: 100%;
-    object-fit: cover; }
+    width: 50%;
+    object-fit: contain; }
   .footer__about-company {
-    width: 30%; }
+    width: 20%; }
   .footer__about-links {
-    width: 30%; }
+    width: 20%; }
   .footer__paragraph:not(:last-child) {
     padding: 2rem;
     font-weight: 500; }
   .footer__heading {
     font-weight: 700;
     text-decoration: underline; }
+  .footer__social-links {
+    width: 20%; }
 
 .header {
   height: 100vh; }
@@ -240,7 +242,8 @@ body {
 
 .section__offer {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #f7f7f7; }
   .section__offer-body {
     width: 80%;
     margin: auto; }
@@ -308,17 +311,29 @@ body {
     right: -40rem;
     top: -5rem; }
 
-.section__testimony-box {
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  margin: auto; }
-
-.section__testimony-imagebox {
-  width: 45%; }
-
-.section__testimony-textbox {
-  width: 55%; }
+.section__testimony {
+  background-color: #f7f7f7; }
+  .section__testimony-box {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto; }
+  .section__testimony-imagebox {
+    width: 45%; }
+  .section__testimony-textbox {
+    width: 55%; }
+  .section__testimony-text {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 7px 16px -3px rgba(0, 0, 0, 0.75);
+    background-color: #f7f7f7; }
+  .section__testimony-image {
+    width: 100%;
+    object-fit: cover; }
 
 .text-image {
   width: 100%;
@@ -327,23 +342,9 @@ body {
 .text__image-holder {
   width: 20%; }
 
-.section__testimony-image {
-  width: 100%;
-  object-fit: cover; }
-
 .secondary__paragraph-box {
   width: 80%;
   padding-top: 2rem; }
-
-.section__testimony-text {
-  width: 70%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 1rem;
-  border-radius: 10px;
-  box-shadow: 0px 7px 16px -3px rgba(0, 0, 0, 0.75);
-  background-color: #f7f7f7; }
 
 .testimony__box-1 {
   margin: 5.5rem auto 0 auto; }

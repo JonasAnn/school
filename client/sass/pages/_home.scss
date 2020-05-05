@@ -1,6 +1,8 @@
+// Offer section design
 .section__offer{
     position: relative;
     overflow: hidden;
+    background-color:$color-grey-light-1;
     &-body{
         width: 80%;
         margin: auto;
@@ -18,6 +20,7 @@
     }
 
 }
+// Offer section card design
 .card{
     width: 28%;
     border: 2px solid $color-grey-dark;
@@ -33,6 +36,7 @@
         z-index: 10;
     }
 }
+// teacher section design
 .section__teacher{
     position: relative;
     overflow: hidden;
@@ -44,10 +48,8 @@
         color: $color-black;
     }
 }
-
+// teacher boxes design
 .teacher{
-    // background-image: url("../bg-img/teacherbg.jpg");
-    // background-size: contain;
     box-shadow: 0px 7px 16px -3px rgba(0,0,0,0.75);
     background-color: $color-grey-light-1;
     padding: 3rem 2rem;
@@ -60,7 +62,7 @@
     }
 
 }
-
+//  teacher section background design
 .round__design{
     position: absolute;
     width: 50%;
@@ -85,18 +87,36 @@
         top: -5rem;
     }
 }
+.section__testimony{
+    background-color: $color-grey-light-1;
+    
+    &-box{
+        @include flexBetween;
+        width: 90%;
+        margin: auto;
+    
+    }
+    &-imagebox{
+        width: 45%;
+    }
+        
+    &-textbox{
+        width: 55%;
+    }
+    &-text{
+        width: 70%;
+        margin: auto;
+        @include flexBetween;
+        padding: 1rem 1rem;
+        border-radius: 10px;
+        box-shadow: 0px 7px 16px -3px rgba(0,0,0,0.75);
+        background-color: $color-grey-light-1;
+    }
+    &-image{
+        @include imageRes;
+    }
+}
 
-.section__testimony-box{
-    @include flexBetween;
-    width: 90%;
-    margin: auto;
-}
-.section__testimony-imagebox{
-    width: 45%;
-}
-.section__testimony-textbox{
-    width: 55%;
-}
 .text-image{
     @include imageRes;
 }
@@ -104,26 +124,18 @@
     width: 20%;
 
 }
-.section__testimony-image{
-    @include imageRes;
-}
+
 .secondary__paragraph-box{
     width: 80%;
     padding-top: 2rem;
    
 }
-.section__testimony-text{
-    width: 70%;
-    margin: auto;
-    @include flexBetween;
-    padding: 1rem 1rem;
-    border-radius: 10px;
-    box-shadow: 0px 7px 16px -3px rgba(0,0,0,0.75);
-    background-color: $color-grey-light-1;
-}
-.testimony__box-1{
+
+.testimony{
+    &__box-1{
     margin: 5.5rem auto 0 auto;
 }
-.testimony__box-2{
+    &__box-2{
     margin: 3rem auto;
+}
 }
