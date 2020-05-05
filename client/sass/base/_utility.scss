@@ -1,0 +1,25 @@
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.image{
+    width: $max-width;
+    height: auto;
+    object-fit: cover;
+}
+.section{
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.margin__bottom_medium {
+    margin-bottom: 2rem;
+}
+.margin__bottom-top_medium{
+    margin: 2rem 0;
+}
+.medium__width{
+    width: 70%;
+    margin: auto;
+}

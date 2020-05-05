@@ -1,0 +1,22 @@
+{
+  "name": "christ-school-website",
+  "version": "1.0.0",
+  "description": "A website created for remote teaching for christ the saviour secondary school",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass client/sass/main.scss client/css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonasAnn/school.git"
+  },
+  "author": "Marvellous and Ifeoma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonasAnn/school/issues"
+  },
+  "homepage": "https://github.com/JonasAnn/school#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.0"
+  }
+}

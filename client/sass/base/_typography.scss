@@ -1,0 +1,54 @@
+body{
+    font-family: 'Oswald', sans-serif;
+    color: $color-black;   
+}
+
+.primary_heading{
+    font-size: 6rem;
+    backface-visibility: hidden;
+    animation: moveFromLeft 1s ease-in;
+    margin-bottom: 1rem;
+}
+.primary_paragraph{
+    font-size: 1.7rem;
+    width: 70%;
+    text-align: justify;
+    margin: auto;
+}
+
+.header__button-box{
+    margin-top: 2rem;
+}
+
+.secondary__heading{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(to right, rgba($color-yellow, .9), rgba($color-blue, 0.9));
+    display: inline-block;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+    transition: all .2s;
+
+    &:hover{
+        transform: translateY(-1rem);
+        text-shadow: .5rem 1rem 20px rgba($color-black, 0.2);
+    }
+}
+.tertiary__heading{
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+.secondary__paragraph{
+    font-size: 1.3rem;
+    text-align: justify;
+    text-align: center;
+}
+
+.section__teacher-span{
+    font-weight: 700;
+    font-size: 1.5rem;
+    display: block;
+    text-decoration: underline;
+}

@@ -1,0 +1,33 @@
+.navbar{
+    width: $max-width;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 4rem;
+    background-color: $color-white;
+    font-size: 2rem;
+    color: $color-blue;
+    font-weight: 500;
+    box-shadow: 10px 10px 20px -20px $color-blue;
+    z-index: 100;
+}
+.logo__box{
+    width: 5%;
+    height: auto;
+}
+
+.nav__list{
+    display: inline-block;
+    padding-top: 1rem;
+    transition: all 0.1s;
+
+    &:hover{
+        border-bottom: 2px solid #FFCB53;
+        opacity: 0.8;
+    }
+
+    &:not(:last-child){
+        margin-right: 3.5rem;
+    }
+}
+

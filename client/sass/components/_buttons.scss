@@ -1,0 +1,67 @@
+.btn{
+    &:link,
+    &:visited{
+    color: $color-blue;
+    padding: 1rem 3rem;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: inline-block;
+    border: 3px solid  $color-yellow;
+    animation: moveButton 1s ease-in;
+    animation-fill-mode: backwards;
+   
+}   
+    &:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.404);
+}
+    &:active{
+    transform: translateY(1px);
+    box-shadow: 0 .5rem 1rem rgba($color-black, 0.404);
+}
+    &__learning{
+    margin-right: 3rem;
+    background-color: $color-yellow;
+    border: none;
+
+}
+    &__teaching{
+    background-color: transparent;
+
+}
+    
+}
+.btn__social{
+    font-size: 3rem;
+    display: inline-block;
+    margin: 1rem 0 0 0;
+    &:not(:last-child){
+        margin-right: 1.7rem;
+    }
+    &-facebook{
+        color: #4267B2;
+    }
+    &-linkedin{
+        color: #2867B2;
+    }
+    &-instagram{
+        background-image: linear-gradient(to right bottom,  rgb(64,93,230), rgb(253,29,29) );
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    &-resume{
+        background-image: linear-gradient(to right bottom,  $color-blue, $color-orange );
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    &:hover{
+        transform: translateY(-3px);
+        text-shadow: 0 1rem 2rem rgba($color-black, 0.404);
+    }
+        &:active{
+        transform: translateY(1px);
+        text-shadow: 0 .5rem 1rem rgba($color-black, 0.404);
+    }
+
+}

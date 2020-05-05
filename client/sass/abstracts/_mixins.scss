@@ -1,0 +1,9 @@
+@mixin flexBetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin imageRes {
+    width: $max-width;
+    object-fit: cover;
+}
