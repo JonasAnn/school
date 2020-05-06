@@ -3,6 +3,7 @@
  <head> 
   <meta charset="UTF-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css"> 
   <link rel="shortcut icon" type="image/png" href="../css/img/school-logo.jpeg"> 
@@ -46,14 +47,40 @@
              </div>
          </nav>
         </header>
-        <main>
+        <main >
             <section class="section__login">
+                <img src="../css/img/graphic-design.png" alt="" class="section__login-design">
                 <div class="section__login-imagebox">
                     <img src="../css/img/login.png" alt="girl login" class="section__login-image">
                 </div>
                 <div class="section__login-formbox">
-                    <div class="section__login-form">
-
+                    <h2 class="secondary__heading margin__bottom-top_medium">Welcome Back!!</h2>
+                    <p class="secondary__paragraph login_paragraph margin__bottom_medium">
+                        Welcome back Login to continue Learning/Teaching! 
+                    </p>
+                    <div class="form__box">
+                        
+                        <form action="/" class="form">
+                            <!-- number or email -->
+                            <label for="details" class="label_login">Enter Email or Phone Number</label>
+                            <input type="text" id="details" class="details" required placeholder="Email or Phone">
+                            <!-- password -->
+                            <label for="password" class="label_login">Enter your Password:</label>
+                            <input type="password" id="password" class="password" required placeholder="Enter Password">
+                            <div class="div__flex-arrange">
+                            <div class="remember__box">
+                                <input type="radio" class="remember"> 
+                                <label for="remember" class="label__remember">Remember me</label>
+                            </div>
+                            <div class="forgotp_box">       
+                                <p class="forgot__password"><a href="#" class="link">Forgot Password?</a></p>
+                            </div>
+                            </div>
+                            <!-- buttons -->
+                            <input type="submit" value="Login" class="btn_login">
+                            <input type="submit" value="Create Account" class="btn_create">
+                        </form>
+                  
                     </div>
                 </div>
             </section>

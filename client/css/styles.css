@@ -74,6 +74,9 @@ body {
   display: block;
   text-decoration: underline; }
 
+.login_paragraph {
+  font-size: 1.5rem; }
+
 .link {
   text-decoration: none;
   color: inherit; }
@@ -175,6 +178,65 @@ body {
     text-decoration: underline; }
   .footer__social-links {
     width: 20%; }
+
+.form__box {
+  width: 70%;
+  height: auto;
+  background-color: white;
+  box-shadow: 0px 7px 16px -3px rgba(0, 0, 0, 0.75);
+  margin: 0 auto;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 5rem 2rem;
+  font-size: 1.5rem;
+  position: relative;
+  overflow: hidden; }
+
+.label_login {
+  display: block;
+  margin: 1rem 0 1rem 0; }
+
+.div__flex-arrange {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 1.7rem auto; }
+
+input[type=text], input[type=password], input[type=email], input[type=tel] {
+  width: 80%;
+  padding: 1.2rem 2rem;
+  margin: 1rem 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: auto;
+  background-color: #f7f7f7; }
+
+input[type=submit] {
+  background-color: #FECB4B;
+  color: white;
+  padding: 1.4rem 3rem;
+  margin: 1.5rem 0;
+  border: none;
+  display: inline-block;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: all .1s; }
+  input[type=submit]:not(:last-child) {
+    margin-right: 2rem; }
+  input[type=submit]:hover {
+    transform: translateY(-3px);
+    box-shadow: 1rem 1rem 2.1rem -0.9rem rgba(0, 0, 0, 0.304);
+    color: #08288D; }
+  input[type=submit]:active, input[type=submit]:focus {
+    transform: translateY(0);
+    box-shadow: 1rem 1rem 2.1rem -1.2rem rgba(0, 0, 0, 0.304);
+    outline: none; }
+
+.form__img {
+  position: absolute;
+  top: -4rem; }
 
 .header {
   height: 100vh; }
@@ -351,3 +413,65 @@ body {
 
 .testimony__box-2 {
   margin: 3rem auto; }
+
+.section__login {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  padding: 3rem 0;
+  position: relative;
+  overflow: hidden; }
+  .section__login-imagebox {
+    width: 45%; }
+  .section__login-formbox {
+    width: 50%;
+    text-align: center; }
+  .section__login-design {
+    position: absolute;
+    left: -35rem;
+    top: -15rem;
+    widows: 5rem; }
+
+.section__signup {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden; }
+  .section__signup-imagebox {
+    width: 45%;
+    height: 100%; }
+  .section__signup-formbox {
+    width: 50%;
+    text-align: center; }
+  .section__signup-design {
+    position: absolute;
+    left: -35rem;
+    top: -15rem;
+    widows: 5rem; }
+  .section__signup-design-1 {
+    position: absolute;
+    left: -35rem;
+    top: -15rem;
+    widows: 5rem; }
+  .section__signup-design-2 {
+    position: absolute;
+    right: -35rem;
+    top: -18rem;
+    widows: 5rem; }
+  .section__signup-design-3 {
+    position: absolute;
+    right: -25rem;
+    bottom: -20rem;
+    widows: 5rem; }
+
+.section__signup-select select {
+  background-color: dodgerblue;
+  color: #fff;
+  width: 80%;
+  margin: auto;
+  padding: 1.2rem 2rem;
+  margin: 1rem 0; }
+  .section__signup-select select option {
+    padding: 1.2rem 2rem; }

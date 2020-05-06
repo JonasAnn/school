@@ -1,0 +1,57 @@
+.section__signup{
+    display: flex;
+    flex-direction: row-reverse;
+    width: $max-width;
+    padding: 4rem 0;
+    position: relative;
+    overflow: hidden;
+
+    &-imagebox{
+        width: 45%;
+        height: 100%;
+    }
+    &-formbox{
+        width: 50%;
+        text-align: center;
+    }
+    &-design{
+        position: absolute;
+        left: -35rem;
+        top: -15rem;
+        widows: 5rem;
+    }
+    &-design-1{
+        position: absolute;
+        left: -35rem;
+        top: -15rem;
+        widows: 5rem;
+    }
+    &-design-2{
+        position: absolute;
+        right: -35rem;
+        top: -18rem;
+        widows: 5rem;
+    }
+    &-design-3{
+        position: absolute;
+        right: -25rem;
+        bottom: -20rem;
+        widows: 5rem;
+    }
+   
+}
+.section__signup{
+    &-select select {
+        background-color: dodgerblue;
+        color: #fff;
+        width: 80%;
+        margin: auto;
+        padding: 1.2rem 2rem;
+        margin: 1rem 0;
+        & option{
+            padding: 1.2rem 2rem;
+        }
+    
+    }
+ 
+}

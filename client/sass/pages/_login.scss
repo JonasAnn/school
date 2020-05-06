@@ -1,0 +1,23 @@
+.section__login{
+    display: flex;
+    flex-direction: row-reverse;
+    width: $max-width;
+    padding: 3rem 0;
+    position: relative;
+    overflow: hidden;
+
+    &-imagebox{
+        width: 45%;
+    }
+    &-formbox{
+        width: 50%;
+        text-align: center;
+    }
+    &-design{
+        position: absolute;
+        left: -35rem;
+        top: -15rem;
+        widows: 5rem;
+    }
+   
+}

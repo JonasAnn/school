@@ -7,3 +7,8 @@
     width: $max-width;
     object-fit: cover;
 }
+
+@mixin stylishBorder {
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
