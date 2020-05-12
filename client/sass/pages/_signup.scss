@@ -2,41 +2,51 @@
     display: flex;
     flex-direction: row-reverse;
     width: $max-width;
-    padding: 4rem 0;
+    padding: 7rem 0;
     position: relative;
     overflow: hidden;
-
+    @include respond(phone){
+        
+    }
     &-imagebox{
         width: 45%;
         height: 100%;
+        @include respond(phone){
+        display: none;
+        }
     }
     &-formbox{
         width: 50%;
         text-align: center;
-    }
-    &-design{
-        position: absolute;
-        left: -35rem;
-        top: -15rem;
-        widows: 5rem;
+        @include respond(phone){
+          width: 100%;
+          z-index: 900;
+         }
     }
     &-design-1{
         position: absolute;
         left: -35rem;
         top: -15rem;
-        widows: 5rem;
+        @include respond(phone){
+            width: 85%;
+        }
+        
     }
     &-design-2{
         position: absolute;
         right: -35rem;
         top: -18rem;
-        widows: 5rem;
+        @include respond(phone){
+            width: 85%;
+        }
     }
     &-design-3{
         position: absolute;
         right: -25rem;
         bottom: -20rem;
-        widows: 5rem;
+        @include respond(phone){
+            width: 85%;
+        }
     }
    
 }

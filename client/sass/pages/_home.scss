@@ -6,17 +6,28 @@
     &-body{
         width: 80%;
         margin: auto;
-       
+        @include respond(phone){
+        width: 100%;    
+        }
     }
     &-card{
         @include flexBetween;
         padding: 4rem 3rem;
+
+        @include respond(phone){
+            flex-direction: column;
+        }
     }
     &-svg{
         position: absolute;
         left: -20rem;
         bottom: -10rem;
         width: 30%;
+        @include respond(phone){
+            left: -20rem;
+            bottom: -2rem;
+            width: 75%;
+        }
     }
 
 }
@@ -29,11 +40,15 @@
     background-color: $color-white;
     outline-offset: .7rem;
     transition: all 1s;
+    z-index: 10;
+    @include respond(phone){
+        width: 100%;
+        &:not(:last-child){
+            margin-bottom: 3rem;
+        }
+    }
     &__image{
         width: 35%;
-    }
-    &-1{
-        z-index: 10;
     }
 }
 // teacher section design
@@ -46,6 +61,10 @@
         margin: auto;
         padding: 4rem 3rem;
         color: $color-black;
+        @include respond(phone){
+           flex-direction: column;
+           align-items: center;
+        }
     }
 }
 // teacher boxes design
@@ -56,6 +75,12 @@
     width: 23%;
     border-radius: 15px;
     z-index: 10;
+    @include respond(phone){
+        width: 90%;
+        &:not(:last-child){
+            margin-bottom: 2.5rem;
+        }
+    }
     &__image{
         width: 60%;
         border-radius: 50%;
@@ -69,22 +94,31 @@
     height: auto;
     height: 120%;
     border-radius: 50%;
+    
     &-1{
         background-color: rgba($color-blue , 0.7);
-        right: -35rem;
+        right: -30rem;
         top: -5rem;
+        @include respond(phone){
+            right: -12rem;
+        }
     }
     &-2{
         background-color: rgba($color-yellow , 0.7);
-        right: -45rem;
+        right: -40rem;
         top: -5rem;
+        @include respond(phone){
+            right: -16rem;
+        }
 
-        
     }
     &-3{
         background-color: rgba($color-orange , 0.7);
-        right: -40rem;
+        right: -25rem;
         top: -5rem;
+        @include respond(phone){
+            right: -19rem;
+        }
     }
 }
 .section__testimony{
@@ -98,10 +132,17 @@
     }
     &-imagebox{
         width: 45%;
+        @include respond(phone){
+            display: none;
+        }
     }
         
     &-textbox{
         width: 55%;
+        padding: 5.5rem 0 1rem 0;
+        @include respond(phone){
+            width: 100%;
+        }
     }
     &-text{
         width: 70%;
@@ -111,6 +152,13 @@
         border-radius: 10px;
         box-shadow: 0px 7px 16px -3px rgba(0,0,0,0.75);
         background-color: $color-grey-light-1;
+        
+        &:not(:last-child){
+            margin-bottom: 3rem;
+        }
+        @include respond(phone){
+            width: 100%;
+        }
     }
     &-image{
         @include imageRes;
@@ -125,17 +173,12 @@
 
 }
 
-.secondary__paragraph-box{
-    width: 80%;
-    padding-top: 2rem;
-   
-}
-
-.testimony{
-    &__box-1{
-    margin: 5.5rem auto 0 auto;
-}
-    &__box-2{
-    margin: 3rem auto;
-}
-}
+// .testimony{
+//     &__box-1{
+//     margin: 5.5rem auto 0 auto;
+//     background-color: orchid;
+// }
+//     &__box-2{
+//     margin: 3rem auto;
+// }
+// }

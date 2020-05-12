@@ -10,12 +10,36 @@
     font-weight: 500;
     box-shadow: 10px 10px 20px -20px $color-blue;
     z-index: 100;
+    
+    @include respond(tab-land){
+        height: 20vh;
+    }
+    @include respond(tab-port){
+        height: 15vh;
+    }
+    @include respond(phone){
+        font-size: 1.5rem;
+        height: 10vh;
+        position: relative;
+    }
+    @include respond(big-desktop){
+        height: 40vh;
+    }
 }
 .logo__box{
     width: 5%;
     height: auto;
+    @include respond(phone){
+       width: 12%;
+       margin-top: .5rem;
+    }
+  
 }
-
+.nav__lists{
+    @include respond(phone){
+        display: none;
+    }
+}
 .nav__list{
     display: inline-block;
     padding-top: 1rem;
@@ -28,6 +52,37 @@
 
     &:not(:last-child){
         margin-right: 3.5rem;
+       
     }
+}
+.hamburger{
+  
+ &__line{
+   display: none;
+    @include respond(phone){
+      &,
+      &::after,
+      &::before{
+          display: inline-block;
+        background-color: $color-black;
+        width: 30px;
+        height: 3px;
+        margin-top: 2rem;
+     
+    }  
+    &::after{
+        content: "";
+        background-color: yellow;
+        position: absolute;
+        top: .5rem;
+    }
+    &::before{
+        content: "";
+        background-color: red;
+        position: absolute;
+        top: 2.5rem;
+    }
+    }
+}
 }
 

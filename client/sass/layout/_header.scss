@@ -1,11 +1,15 @@
 .header{
     height: 100vh;
-
+   
+    @include respond(phone){
+        height: 80vh;
+      
+     } 
     &__body{
         display: flex;
         width: $max-width;
         height: 80vh;
-        padding: 0 2rem 0 2rem;
+        padding: 0 2rem;
         justify-content: space-evenly;
         position: relative;
 
@@ -13,10 +17,18 @@
             width: 40%;
             text-align: center;
             padding: 12rem 0 0 5rem;
-        
+
+            @include respond(phone){
+                width: 100%;
+                padding: 10rem 0 0 0;
+             } 
         }
+
         &-image{
             width: 40%;
+            @include respond(phone){
+               display: none;
+            }
             
         }
     }
@@ -25,6 +37,11 @@
 .header__flag{
     width: 15%;
     height: auto;
+  
+    @include respond(phone){
+        width: 15%;
+     
+     }
 
     &:not(:last-child){
         margin-right: 2rem;
@@ -33,20 +50,37 @@
         width: 70%;
         display: flex;
         margin: auto;
-        margin-top: 2rem;  
+        margin-top: 2rem;
+
+        @include respond(phone){
+            text-align: center;
+            width: 60%;
+         
+         }
     }
 }
 
 .svg{
     width: 5%;
     position: absolute;
+    @include respond(phone){
+        width: 10%;
+     } 
 
     &-1{
         top: 1rem;
         left: -1rem;
+        @include respond(phone){
+            top: .5rem;
+            left: -2rem;
+         } 
     }
     &-2{
         bottom: -3rem;
         right: 0;
+        @include respond(phone){
+           bottom: 7rem;
+           right: 0;
+         }
     }
 }

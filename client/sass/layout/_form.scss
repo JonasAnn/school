@@ -11,6 +11,9 @@
     font-size: 1.5rem;
     position: relative;
     overflow: hidden;
+    @include respond(phone){
+        width: 90%;
+        }
 }
 }
 

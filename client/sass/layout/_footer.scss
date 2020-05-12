@@ -6,11 +6,20 @@
     padding: 4rem;
     font-size: 1.7rem;
     text-transform: uppercase;
-    text-align: left;
-
+    position: relative;
+        @include respond(phone){
+            flex-direction: column;
+            text-align: center;
+    
+            padding: 2rem;
+        }
     &__logo-box{
         width: 20%;
-      
+        @include respond(phone){
+            width: 40%;
+            margin: auto;
+            padding-bottom: 1.5rem;
+        }
     }
     &__logo{
         width: 50%;
@@ -18,23 +27,38 @@
     }
    &__about-company{
        width: 20%;
-   
+       @include respond(phone){
+        width: 100%;
+    
+    }
    }
    &__about-links{
        width: 20%;
+       @include respond(phone){
+        width: 100%;
+    
+       }
       
    }
-   &__paragraph:not(:last-child){
-       padding: 2rem;
-       font-weight: 500;
-
+   &__paragraph{
+    @include respond(phone){
+        margin-right: 1rem;
+        display: inline-block;
+        padding: 1.2rem 0;
+    }
    }
+
    &__heading{
        font-weight: 700;
        text-decoration: underline;
    }
    &__social-links{
        width: 20%;
+       @include respond(phone){
+        width: 100%;
+        margin: auto;
+       
+    }
    }
 
 }

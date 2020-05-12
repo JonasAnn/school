@@ -8,12 +8,21 @@ body{
     backface-visibility: hidden;
     animation: moveFromLeft 1s ease-in;
     margin-bottom: 1rem;
+    @include respond(tab-port){
+        font-size: 5.5rem;
+    }
+    @include respond(phone){
+        font-size: 5rem;
+    }
 }
 .primary_paragraph{
     font-size: 1.7rem;
     width: 70%;
     text-align: justify;
     margin: auto;
+    @include respond(phone){
+        width: 60%;
+    }
 }
 
 .header__button-box{
@@ -30,6 +39,14 @@ body{
     color: transparent;
     letter-spacing: 2px;
     transition: all .2s;
+    @include respond(tab-port){
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    @include respond(phone){
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
 
     &:hover{
         transform: translateY(-1rem);
@@ -44,6 +61,12 @@ body{
     font-size: 1.3rem;
     text-align: justify;
     text-align: center;
+}
+
+.secondary__paragraph-box{
+    width: 80%;
+    padding-top: 2rem;
+   
 }
 
 .section__teacher-span{
