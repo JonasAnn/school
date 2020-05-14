@@ -1,0 +1,75 @@
+.school__dashboard{
+    @include flexBetween;
+    height: 100vh;
+    &--left{
+    background-color: $color-white;
+        width: 25%;
+        padding: 3rem 0;
+        border-top-right-radius: 5px ;
+        border-bottom-right-radius: 5px;
+        box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);
+    }
+    &--right{
+        width: 75%;
+        background-color: rgba(0,0,0,0.75);
+    }
+    &--logobox{
+        width: 30%;
+        margin: auto;
+    }
+    &--logo{
+       @include imageRes;
+    }
+    &--listbox{
+        margin-top: 2rem;
+    }
+    &--list{
+        list-style: none;
+        
+    }
+    &--item{
+        background-color: $color-white;
+        color: $color-black;
+        font-size: 2rem;
+        display: block;
+        padding: 1.5rem 0 1rem 0;
+        border-bottom: 3px solid rgba($color-black, .8);
+        border-left: 3px solid transparent;
+        transition: all .2s ease;
+        &:active{
+            color: $color-blue;
+            background-color: $color-grey-light-1;
+            border-bottom: 3px solid transparent;
+            border-left: 3px solid rgba($color-blue, .8);
+        }
+    }
+    &--links{
+        text-decoration: none;
+        color: inherit;
+        padding-left: 2rem;
+    }
+    .fa{
+        padding-right: 1rem;
+    }
+}
+// teachers option design
+.school__dashboard{
+    &--teachers{
+        width: 90%;
+        margin: auto;
+        background-color: $color-white;
+        box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);
+        border-radius: 5px;
+        padding: 2rem 2rem;
+    }
+    &--teacher1{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: gold;
+        border-bottom: 3px solid rgba($color-black, .8);
+        padding: 1re 1rem;
+    }
+
+}

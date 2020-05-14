@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css"> 
+  <link rel="shortcut icon" type="image/png" href="../css/img/school-logo.jpeg"> 
+  <title>Christ The Saviour Secondary School</title> 
+ </head> 
+ <body>
+    <main class="school__dashboard">
+        <section class="school__dashboard--left">
+            <div class="school__dashboard--logobox">
+                <img src="../css/img/school-logo.jpeg" alt="school logo" class="school__dashboard--logo">
+            </div>
+            <div class="school__dashboard--listbox">
+                <ul class="school__dashboard--list">
+                    <li class="school__dashboard--item">
+                        <a href="#" class="school__dashboard--links">
+                            <i class="fa fa-book" aria-hidden="true"></i>
+                            Dashboard</a>
+                    </li>
+                    <li class="school__dashboard--item">
+                        <a href="#teachers__section" class="school__dashboard--links">
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                            Teachers</a>
+                    </li>
+                    <li class="school__dashboard--item">
+                        <a href="#" class="school__dashboard--links">
+                            <i class="fa fa-graduation-cap" aria-hidden="true"></i> 
+                            Students</a>
+                    </li>
+                    <li class="school__dashboard--item">
+                        <a href="#" class="school__dashboard--links">
+                            <i class="fa fa-table" aria-hidden="true"></i>
+                            Timetable</a>
+
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="school__dashboard--right" id="teachers__section">
+          
+
+            <section class="school__dashboard--teachers">
+                <div class="school__dashboard--teacher1">
+                    <div class="dashboard__teacher--imagebox">
+                        <img src="#" alt="teacher image" class="dashboard__teacher-image">
+                    </div>
+                    <div class="dashboard__teacher--namebox">
+                        <p class="dashboard__teacher--name">Jonah Prince</p>
+                    </div>
+                    <div class="dashboard__teacher--subjectbox">
+                        <ul class="dashboard__teacher--subjectlist">
+                            <li class="dashboard__teacher--subjectitems">English</li>
+                            <li class="dashboard__teacher--subjectitems">Literature</li>
+                        </ul>
+                    </div>
+                    <div class="dashboard__teacher--attendancebox">
+                        <h4 class="">Attendance</h4>
+                        <div class="dashboard__teacher--attendance">
+                            <div class="week--one">
+                                <input type="radio" name="attendace--check" id="present">
+                                <label for="present" class="dashboard__teacher--label"></label>
+                                <input type="radio" name="attendace--check" id="absent">
+                                <label for="absent" class="dashboard__teacher--label"></label>
+                                <input type="radio" name="attendace--check" id="leave">
+                                <label for="leave" class="dashboard__teacher--label"></label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+ </body>
+ </html>
