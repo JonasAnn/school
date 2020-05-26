@@ -452,12 +452,18 @@ input[type=submit] {
     background-color: #fff;
     width: 25%;
     padding: 3rem 0;
-    border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.75); }
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.75);
+    z-index: 100; }
   .school__dashboard--right {
     width: 75%;
-    background-color: rgba(0, 0, 0, 0.75); }
+    background-color: #eee; }
+  .school__dashboard--navbar {
+    height: 15vh;
+    padding: 2rem 2rem;
+    background-color: #fff;
+    margin-bottom: 2rem;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.75); }
   .school__dashboard--logobox {
     width: 30%;
     margin: auto; }
@@ -477,7 +483,7 @@ input[type=submit] {
     border-bottom: 3px solid rgba(0, 0, 0, 0.8);
     border-left: 3px solid transparent;
     transition: all .2s ease; }
-    .school__dashboard--item:active {
+    .school__dashboard--item:active, .school__dashboard--item:focus {
       color: #08288D;
       background-color: #f7f7f7;
       border-bottom: 3px solid transparent;
@@ -490,21 +496,147 @@ input[type=submit] {
     padding-right: 1rem; }
 
 .school__dashboard--teachers {
-  width: 90%;
+  width: 80%;
   margin: auto;
   background-color: #fff;
   box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.75);
   border-radius: 5px;
   padding: 2rem 2rem; }
 
-.school__dashboard--teacher1 {
+.school__dashboard--teacher1, .school__dashboard--teacher2, .school__dashboard--teacher3, .school__dashboard--teacher4, .school__dashboard--teacher5 {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: gold;
   border-bottom: 3px solid rgba(0, 0, 0, 0.8);
-  padding: 1re 1rem; }
+  padding: 1rem 1rem 0 1rem; }
+
+.dashboard__teacher--imagebox {
+  width: 10%; }
+
+.dashboard__teacher--image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #08288D; }
+
+.dashboard__teacher--namebox {
+  padding: 2rem  1rem 0 0;
+  width: 15%;
+  text-align: left; }
+
+.dashboard__teacher--name {
+  font-size: 1.5rem; }
+  .dashboard__teacher--name span {
+    text-decoration: underline;
+    display: block;
+    font-weight: 700; }
+
+.dashboard__teacher--subjectbox {
+  padding: 1rem  1rem 0 0;
+  width: 27%;
+  text-align: left; }
+
+.dashboard__teacher--subject {
+  text-decoration: underline;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-left: 1rem; }
+
+.dashboard__teacher--subjectlist {
+  padding-left: 2rem; }
+
+.dashboard__teacher--subjectitems {
+  font-size: 1.2rem; }
+
+.dashboard__teacher--attendancebox {
+  padding: 0;
+  width: 43%;
+  text-align: center; }
+
+.dashboard__teacher--attendance {
+  display: inline-block; }
+  .dashboard__teacher--attendance:not(:last-child) {
+    margin-right: 1rem; }
+
+.dashboard__teacher--attendance--header {
+  text-decoration: underline;
+  font-size: 1.5rem;
+  font-weight: 700; }
+
+.dashboard__teacher--attendance--para {
+  font-size: 1.5rem; }
+
+.attendace--radio {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 2px solid #08288D;
+  display: inline-block;
+  position: relative;
+  cursor: pointer; }
+
+.radio {
+  display: none; }
+  .radio:checked + .dashboard__teacher--label > .present::after,
+  .radio:checked + .dashboard__teacher--label > .absent::after,
+  .radio:checked + .dashboard__teacher--label > .leave::after {
+    color: #fff; }
+  .radio:checked + .dashboard__teacher--label > .present,
+  .radio:checked + .dashboard__teacher--label > .absent,
+  .radio:checked + .dashboard__teacher--label > .leave {
+    background-color: #FECB4B;
+    border: 2px solid #f7f7f7; }
+
+.present {
+  font-size: 2.2rem;
+  transition: all .2s; }
+  .present:hover {
+    font-size: 1.5rem; }
+  .present::after {
+    content: "P";
+    font-weight: 300;
+    display: block;
+    position: absolute;
+    color: #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.absent {
+  font-size: 2.2rem;
+  transition: all .2s; }
+  .absent:hover {
+    font-size: 1.5rem; }
+  .absent::after {
+    content: "A";
+    font-weight: 300;
+    display: block;
+    position: absolute;
+    color: #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.leave {
+  font-size: 2.2rem;
+  transition: all .2s; }
+  .leave:hover {
+    font-size: 1.5rem; }
+  .leave::after {
+    content: "L";
+    font-weight: 300;
+    display: block;
+    position: absolute;
+    color: #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.week {
+  display: inline-block; }
+  .week--one {
+    background-color: ivory; }
 
 .section__offer {
   position: relative;

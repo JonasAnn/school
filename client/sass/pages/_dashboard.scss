@@ -5,13 +5,21 @@
     background-color: $color-white;
         width: 25%;
         padding: 3rem 0;
-        border-top-right-radius: 5px ;
+        // border-top-right-radius: 5px ;
         border-bottom-right-radius: 5px;
         box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);
+        z-index: 100;
     }
     &--right{
         width: 75%;
-        background-color: rgba(0,0,0,0.75);
+        background-color: $color-grey-light-2;
+    }
+    &--navbar{
+        height: 15vh;
+        padding: 2rem 2rem;
+        background-color: $color-white;
+        margin-bottom: 2rem;
+        box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);
     }
     &--logobox{
         width: 30%;
@@ -36,7 +44,8 @@
         border-bottom: 3px solid rgba($color-black, .8);
         border-left: 3px solid transparent;
         transition: all .2s ease;
-        &:active{
+        &:active,
+        &:focus{
             color: $color-blue;
             background-color: $color-grey-light-1;
             border-bottom: 3px solid transparent;
@@ -55,21 +64,177 @@
 // teachers option design
 .school__dashboard{
     &--teachers{
-        width: 90%;
+        width: 80%;
         margin: auto;
         background-color: $color-white;
         box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);
         border-radius: 5px;
         padding: 2rem 2rem;
     }
-    &--teacher1{
+    &--teacher1,
+    &--teacher2,
+    &--teacher3,
+    &--teacher4,
+    &--teacher5{
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        background-color: gold;
         border-bottom: 3px solid rgba($color-black, .8);
-        padding: 1re 1rem;
+        padding: 1rem 1rem 0 1rem;
     }
 
+}
+.dashboard__teacher{
+    &--imagebox{
+        width: 10%;
+      
+    }
+    &--image{
+        @include imageRes;
+        border-radius: 50%;
+        border: 1px solid $color-blue;
+    }
+    &--namebox{
+        padding: 2rem  1rem 0 0;
+        width: 15%;
+        text-align: left;
+    }
+    &--name{
+        font-size: 1.5rem;
+        span{
+            text-decoration: underline;
+            display: block;
+            font-weight: 700;
+        }
+    }
+    &--subjectbox{
+        padding: 1rem  1rem 0 0;
+        width: 27%;
+        text-align: left;
+    }
+    &--subject{
+        text-decoration: underline;
+        font-size: 1.5rem; 
+        font-weight: 700; 
+        padding-left: 1rem;   
+    }
+    &--subjectlist{
+        // list-style: none;
+        padding-left: 2rem;
+    }
+    &--subjectitems{
+        font-size: 1.2rem;
+    }
+    &--attendancebox{
+        padding: 0;
+        width: 43%;
+        text-align: center;
+     
+    }
+}
+
+.dashboard__teacher{
+    &--attendance{
+        display: inline-block;
+        &:not(:last-child){
+            margin-right: 1rem;
+        }
+    }
+    &--attendance--header{
+        text-decoration: underline;
+        font-size: 1.5rem; 
+        font-weight: 700;  
+    }
+    &--attendance--para{
+        font-size: 1.5rem; 
+    }
+    &--label{
+       
+    }
+}
+.attendace--radio{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 2px solid $color-blue;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+.radio{
+    display: none;
+    &:checked + .dashboard__teacher--label > .present::after,
+    &:checked + .dashboard__teacher--label > .absent::after,
+    &:checked + .dashboard__teacher--label > .leave::after{
+        color: $color-white;
+
+    }
+    &:checked + .dashboard__teacher--label > .present,
+    &:checked + .dashboard__teacher--label > .absent,
+    &:checked + .dashboard__teacher--label > .leave{
+       background-color: $color-yellow;
+       border: 2px solid $color-grey-light-1;
+
+    }
+}
+.present{
+    font-size: 2.2rem;
+    transition: all .2s;
+        &:hover{
+            font-size: 1.5rem;  
+        }
+    &::after{
+        content: "P";
+        font-weight: 300;
+        display: block;
+        position: absolute;
+        color: $color-black;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+}
+.absent{
+    font-size: 2.2rem;
+    transition: all .2s;
+        &:hover{
+            font-size: 1.5rem;  
+        }
+    &::after{
+        content: "A";
+        font-weight: 300;
+        display: block;
+        position: absolute;
+        color: $color-black;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+}
+.leave{
+    font-size: 2.2rem;
+    transition: all .2s;
+        &:hover{
+            font-size: 1.5rem;  
+        }
+    &::after{
+        content: "L";
+        font-weight: 300;
+        display: block;
+        position: absolute;
+        color: $color-black;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+}
+.week{
+    display: inline-block;
+    &--one{
+    background-color: ivory;
+}
 }

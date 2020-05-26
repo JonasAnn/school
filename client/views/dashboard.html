@@ -3,7 +3,7 @@
  <head> 
   <meta charset="UTF-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css"> 
   <link rel="shortcut icon" type="image/png" href="../css/img/school-logo.jpeg"> 
@@ -42,38 +42,364 @@
             </div>
         </section>
         <section class="school__dashboard--right" id="teachers__section">
-          
+            <nav class="school__dashboard--navbar">
+                <h2 class="tertiary__heading">Dashboard</h2>
+            </nav>
 
-            <section class="school__dashboard--teachers">
-                <div class="school__dashboard--teacher1">
-                    <div class="dashboard__teacher--imagebox">
-                        <img src="#" alt="teacher image" class="dashboard__teacher-image">
-                    </div>
-                    <div class="dashboard__teacher--namebox">
-                        <p class="dashboard__teacher--name">Jonah Prince</p>
-                    </div>
-                    <div class="dashboard__teacher--subjectbox">
-                        <ul class="dashboard__teacher--subjectlist">
-                            <li class="dashboard__teacher--subjectitems">English</li>
-                            <li class="dashboard__teacher--subjectitems">Literature</li>
-                        </ul>
-                    </div>
-                    <div class="dashboard__teacher--attendancebox">
-                        <h4 class="">Attendance</h4>
-                        <div class="dashboard__teacher--attendance">
-                            <div class="week--one">
-                                <input type="radio" name="attendace--check" id="present">
-                                <label for="present" class="dashboard__teacher--label"></label>
-                                <input type="radio" name="attendace--check" id="absent">
-                                <label for="absent" class="dashboard__teacher--label"></label>
-                                <input type="radio" name="attendace--check" id="leave">
-                                <label for="leave" class="dashboard__teacher--label"></label>
+                <section class="school__dashboard--teachers">
+                    <div class="school__dashboard--teacher1">
+                        <div class="dashboard__teacher--imagebox">
+                            <img src="../css/img/avatar.jpg" alt="teacher image" class="dashboard__teacher--image">
+                        </div>
+                        <div class="dashboard__teacher--namebox">
+                            <p class="dashboard__teacher--name"> <span>Name:</span> Jonah Prince</p>
+                        </div>
+                        <div class="dashboard__teacher--subjectbox">
+                            <p class="dashboard__teacher--subject">Subjects:</p>
+                            <ol class="dashboard__teacher--subjectlist">
+                                <li class="dashboard__teacher--subjectitems">English</li>
+                                <li class="dashboard__teacher--subjectitems">Literature</li>
+                            </ol>
+                        </div>
+                        <div class="dashboard__teacher--attendancebox">
+                            <h4 class="dashboard__teacher--attendance--header">Attendance</h4>
+                            <div class="dashboard__teacher--attendance">
+                                <p class="dashboard__teacher--attendance--para">Week 1</p>
+                                <div class="week--one">
+                                    <input type="radio" name="attendace--check" id="present" class="radio"> 
+                                    <label for="present" class="dashboard__teacher--label">
+                                        <span class="attendace--radio present"></span> 
+                                    </label>
+                                    <input type="radio" name="attendace--check" id="absent" class="radio">
+                                    <label for="absent" class="dashboard__teacher--label">
+                                        <span class="attendace--radio absent"></span>
+                                    </label>
+                                    <input type="radio" name="attendace--check" id="leave" class="radio">
+                                    <label for="leave" class="dashboard__teacher--label">
+                                        <span class="attendace--radio leave"></span>
+                                    </label>
+                                </div>
                             </div>
-
+                            <div class="dashboard__teacher--attendance">
+                                <p class="dashboard__teacher--attendance--para">Week 2</p>
+                                <div class="week--two">
+                                    <input type="radio" name="attendace--check2" id="present-2" class="radio"> 
+                                    <label for="present-2" class="dashboard__teacher--label">
+                                        <span class="attendace--radio present present-2"></span> 
+                                    </label>
+                                    <input type="radio" name="attendace--check2" id="absent-2" class="radio">
+                                    <label for="absent-2" class="dashboard__teacher--label">
+                                        <span class="attendace--radio absent absent-2"></span>
+                                    </label>
+                                    <input type="radio" name="attendace--check2" id="leave-2" class="radio">
+                                    <label for="leave-2" class="dashboard__teacher--label">
+                                        <span class="attendace--radio leave leave-2"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="dashboard__teacher--attendance">
+                                <p class="dashboard__teacher--attendance--para">Week 3</p>
+                                <div class="week--three">
+                                    <input type="radio" name="attendace--check3" id="present-3" class="radio"> 
+                                    <label for="present-3" class="dashboard__teacher--label">
+                                        <span class="attendace--radio present present-3"></span> 
+                                    </label>
+                                    <input type="radio" name="attendace--check3" id="absent-3" class="radio">
+                                    <label for="absent-3" class="dashboard__teacher--label">
+                                        <span class="attendace--radio absent absent-3"></span>
+                                    </label>
+                                    <input type="radio" name="attendace--check3" id="leave-3" class="radio">
+                                    <label for="leave-3" class="dashboard__teacher--label">
+                                        <span class="attendace--radio leave leave-3"></span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                    <!-- -----teacher 2----- -->
+                    <div class="school__dashboard--teacher2">
+                        <div class="dashboard__teacher--imagebox">
+                            <img src="../css/img/avatar.jpg" alt="teacher image" class="dashboard__teacher--image">
+                        </div>
+                        <div class="dashboard__teacher--namebox">
+                            <p class="dashboard__teacher--name"> <span>Name:</span> Jonah Prince</p>
+                        </div>
+                        <div class="dashboard__teacher--subjectbox">
+                            <p class="dashboard__teacher--subject">Subjects:</p>
+                            <ol class="dashboard__teacher--subjectlist">
+                                <li class="dashboard__teacher--subjectitems">English</li>
+                                <li class="dashboard__teacher--subjectitems">Literature</li>
+                            </ol>
+                        </div>
+                        <div class="dashboard__teacher--attendancebox">
+                            <h4 class="dashboard__teacher--attendance--header">Attendance</h4>
+                            <div class="dashboard__teacher--attendance">
+                                <p class="dashboard__teacher--attendance--para">Week 1</p>
+                                <div class="week--one">
+                                    <input type="radio" name="attendace--check" id="present" class="radio"> 
+                                    <label for="present" class="dashboard__teacher--label">
+                                        <span class="attendace--radio present"></span> 
+                                    </label>
+                                    <input type="radio" name="attendace--check" id="absent" class="radio">
+                                    <label for="absent" class="dashboard__teacher--label">
+                                        <span class="attendace--radio absent"></span>
+                                    </label>
+                                    <input type="radio" name="attendace--check" id="leave" class="radio">
+                                    <label for="leave" class="dashboard__teacher--label">
+                                        <span class="attendace--radio leave"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="dashboard__teacher--attendance">
+                                <p class="dashboard__teacher--attendance--para">Week 2</p>
+                                <div class="week--two">
+                                    <input type="radio" name="attendace--check2" id="present-2" class="radio"> 
+                                    <label for="present-2" class="dashboard__teacher--label">
+                                        <span class="attendace--radio present present-2"></span> 
+                                    </label>
+                                    <input type="radio" name="attendace--check2" id="absent-2" class="radio">
+                                    <label for="absent-2" class="dashboard__teacher--label">
+                                        <span class="attendace--radio absent absent-2"></span>
+                                    </label>
+                                    <input type="radio" name="attendace--check2" id="leave-2" class="radio">
+                                    <label for="leave-2" class="dashboard__teacher--label">
+                                        <span class="attendace--radio leave leave-2"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="dashboard__teacher--attendance">
+                                <p class="dashboard__teacher--attendance--para">Week 3</p>
+                                <div class="week--three">
+                                    <input type="radio" name="attendace--check3" id="present-3" class="radio"> 
+                                    <label for="present-3" class="dashboard__teacher--label">
+                                        <span class="attendace--radio present present-3"></span> 
+                                    </label>
+                                    <input type="radio" name="attendace--check3" id="absent-3" class="radio">
+                                    <label for="absent-3" class="dashboard__teacher--label">
+                                        <span class="attendace--radio absent absent-3"></span>
+                                    </label>
+                                    <input type="radio" name="attendace--check3" id="leave-3" class="radio">
+                                    <label for="leave-3" class="dashboard__teacher--label">
+                                        <span class="attendace--radio leave leave-3"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -----teacher 3---- -->
+                    <div class="school__dashboard--teacher3">
+                        <div class="dashboard__teacher--imagebox">
+                            <img src="../css/img/avatar.jpg" alt="teacher image" class="dashboard__teacher--image">
+                        </div>
+                        <div class="dashboard__teacher--namebox">
+                            <p class="dashboard__teacher--name"> <span>Name:</span> Jonah Prince</p>
+                        </div>
+                        <div class="dashboard__teacher--subjectbox">
+                            <p class="dashboard__teacher--subject">Subjects:</p>
+                            <ol class="dashboard__teacher--subjectlist">
+                                <li class="dashboard__teacher--subjectitems">English</li>
+                                <li class="dashboard__teacher--subjectitems">Literature</li>
+                            </ol>
+                        </div>
+                        <div class="dashboard__teacher--attendancebox">
+                            <h4 class="dashboard__teacher--attendance--header">Attendance</h4>
+                            <div class="dashboard__teacher--attendance">
+                                <p class="dashboard__teacher--attendance--para">Week 1</p>
+                                <div class="week--one">
+                                    <input type="radio" name="attendace--check" id="present" class="radio"> 
+                                    <label for="present" class="dashboard__teacher--label">
+                                        <span class="attendace--radio present"></span> 
+                                    </label>
+                                    <input type="radio" name="attendace--check" id="absent" class="radio">
+                                    <label for="absent" class="dashboard__teacher--label">
+                                        <span class="attendace--radio absent"></span>
+                                    </label>
+                                    <input type="radio" name="attendace--check" id="leave" class="radio">
+                                    <label for="leave" class="dashboard__teacher--label">
+                                        <span class="attendace--radio leave"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="dashboard__teacher--attendance">
+                                <p class="dashboard__teacher--attendance--para">Week 2</p>
+                                <div class="week--two">
+                                    <input type="radio" name="attendace--check2" id="present-2" class="radio"> 
+                                    <label for="present-2" class="dashboard__teacher--label">
+                                        <span class="attendace--radio present present-2"></span> 
+                                    </label>
+                                    <input type="radio" name="attendace--check2" id="absent-2" class="radio">
+                                    <label for="absent-2" class="dashboard__teacher--label">
+                                        <span class="attendace--radio absent absent-2"></span>
+                                    </label>
+                                    <input type="radio" name="attendace--check2" id="leave-2" class="radio">
+                                    <label for="leave-2" class="dashboard__teacher--label">
+                                        <span class="attendace--radio leave leave-2"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="dashboard__teacher--attendance">
+                                <p class="dashboard__teacher--attendance--para">Week 3</p>
+                                <div class="week--three">
+                                    <input type="radio" name="attendace--check3" id="present-3" class="radio"> 
+                                    <label for="present-3" class="dashboard__teacher--label">
+                                        <span class="attendace--radio present present-3"></span> 
+                                    </label>
+                                    <input type="radio" name="attendace--check3" id="absent-3" class="radio">
+                                    <label for="absent-3" class="dashboard__teacher--label">
+                                        <span class="attendace--radio absent absent-3"></span>
+                                    </label>
+                                    <input type="radio" name="attendace--check3" id="leave-3" class="radio">
+                                    <label for="leave-3" class="dashboard__teacher--label">
+                                        <span class="attendace--radio leave leave-3"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -----teacher 4----- -->
+                    <div class="school__dashboard--teacher4">
+                        <div class="dashboard__teacher--imagebox">
+                            <img src="../css/img/avatar.jpg" alt="teacher image" class="dashboard__teacher--image">
+                        </div>
+                        <div class="dashboard__teacher--namebox">
+                            <p class="dashboard__teacher--name"> <span>Name:</span> Jonah Prince</p>
+                        </div>
+                        <div class="dashboard__teacher--subjectbox">
+                            <p class="dashboard__teacher--subject">Subjects:</p>
+                            <ol class="dashboard__teacher--subjectlist">
+                                <li class="dashboard__teacher--subjectitems">English</li>
+                                <li class="dashboard__teacher--subjectitems">Literature</li>
+                            </ol>
+                        </div>
+                        <div class="dashboard__teacher--attendancebox">
+                            <h4 class="dashboard__teacher--attendance--header">Attendance</h4>
+                            <div class="dashboard__teacher--attendance">
+                                <p class="dashboard__teacher--attendance--para">Week 1</p>
+                                <div class="week--one">
+                                    <input type="radio" name="attendace--check" id="present" class="radio"> 
+                                    <label for="present" class="dashboard__teacher--label">
+                                        <span class="attendace--radio present"></span> 
+                                    </label>
+                                    <input type="radio" name="attendace--check" id="absent" class="radio">
+                                    <label for="absent" class="dashboard__teacher--label">
+                                        <span class="attendace--radio absent"></span>
+                                    </label>
+                                    <input type="radio" name="attendace--check" id="leave" class="radio">
+                                    <label for="leave" class="dashboard__teacher--label">
+                                        <span class="attendace--radio leave"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="dashboard__teacher--attendance">
+                                <p class="dashboard__teacher--attendance--para">Week 2</p>
+                                <div class="week--two">
+                                    <input type="radio" name="attendace--check2" id="present-2" class="radio"> 
+                                    <label for="present-2" class="dashboard__teacher--label">
+                                        <span class="attendace--radio present present-2"></span> 
+                                    </label>
+                                    <input type="radio" name="attendace--check2" id="absent-2" class="radio">
+                                    <label for="absent-2" class="dashboard__teacher--label">
+                                        <span class="attendace--radio absent absent-2"></span>
+                                    </label>
+                                    <input type="radio" name="attendace--check2" id="leave-2" class="radio">
+                                    <label for="leave-2" class="dashboard__teacher--label">
+                                        <span class="attendace--radio leave leave-2"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="dashboard__teacher--attendance">
+                                <p class="dashboard__teacher--attendance--para">Week 3</p>
+                                <div class="week--three">
+                                    <input type="radio" name="attendace--check3" id="present-3" class="radio"> 
+                                    <label for="present-3" class="dashboard__teacher--label">
+                                        <span class="attendace--radio present present-3"></span> 
+                                    </label>
+                                    <input type="radio" name="attendace--check3" id="absent-3" class="radio">
+                                    <label for="absent-3" class="dashboard__teacher--label">
+                                        <span class="attendace--radio absent absent-3"></span>
+                                    </label>
+                                    <input type="radio" name="attendace--check3" id="leave-3" class="radio">
+                                    <label for="leave-3" class="dashboard__teacher--label">
+                                        <span class="attendace--radio leave leave-3"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- -----teacher 5----- -->
+                <div class="school__dashboard--teacher5">
+                    <div class="dashboard__teacher--imagebox">
+                        <img src="../css/img/avatar.jpg" alt="teacher image" class="dashboard__teacher--image">
+                    </div>
+                    <div class="dashboard__teacher--namebox">
+                        <p class="dashboard__teacher--name"> <span>Name:</span> Jonah Prince</p>
+                    </div>
+                    <div class="dashboard__teacher--subjectbox">
+                        <p class="dashboard__teacher--subject">Subjects:</p>
+                        <ol class="dashboard__teacher--subjectlist">
+                            <li class="dashboard__teacher--subjectitems">English</li>
+                            <li class="dashboard__teacher--subjectitems">Literature</li>
+                        </ol>
+                    </div>
+                    <div class="dashboard__teacher--attendancebox">
+                        <h5 class="dashboard__teacher--attendance--header">Attendance</h5>
+                        <div class="dashboard__teacher--attendance">
+                            <p class="dashboard__teacher--attendance--para">Week 1</p>
+                            <div class="week--one">
+                                <input type="radio" name="attendace--check" id="present" class="radio"> 
+                                <label for="present" class="dashboard__teacher--label">
+                                    <span class="attendace--radio present"></span> 
+                                </label>
+                                <input type="radio" name="attendace--check" id="absent" class="radio">
+                                <label for="absent" class="dashboard__teacher--label">
+                                    <span class="attendace--radio absent"></span>
+                                </label>
+                                <input type="radio" name="attendace--check" id="leave" class="radio">
+                                <label for="leave" class="dashboard__teacher--label">
+                                    <span class="attendace--radio leave"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="dashboard__teacher--attendance">
+                            <p class="dashboard__teacher--attendance--para">Week 2</p>
+                            <div class="week--two">
+                                <input type="radio" name="attendace--check2" id="present-2" class="radio"> 
+                                <label for="present-2" class="dashboard__teacher--label">
+                                    <span class="attendace--radio present present-2"></span> 
+                                </label>
+                                <input type="radio" name="attendace--check2" id="absent-2" class="radio">
+                                <label for="absent-2" class="dashboard__teacher--label">
+                                    <span class="attendace--radio absent absent-2"></span>
+                                </label>
+                                <input type="radio" name="attendace--check2" id="leave-2" class="radio">
+                                <label for="leave-2" class="dashboard__teacher--label">
+                                    <span class="attendace--radio leave leave-2"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="dashboard__teacher--attendance">
+                            <p class="dashboard__teacher--attendance--para">Week 3</p>
+                            <div class="week--three">
+                                <input type="radio" name="attendace--check3" id="present-3" class="radio"> 
+                                <label for="present-3" class="dashboard__teacher--label">
+                                    <span class="attendace--radio present present-3"></span> 
+                                </label>
+                                <input type="radio" name="attendace--check3" id="absent-3" class="radio">
+                                <label for="absent-3" class="dashboard__teacher--label">
+                                    <span class="attendace--radio absent absent-3"></span>
+                                </label>
+                                <input type="radio" name="attendace--check3" id="leave-3" class="radio">
+                                <label for="leave-3" class="dashboard__teacher--label">
+                                    <span class="attendace--radio leave leave-3"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                
+                
+                </section>
+            
         </section>
     </main>
  </body>
